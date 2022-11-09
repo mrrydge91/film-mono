@@ -1,0 +1,7 @@
+{% extends "projects/base.html" %}
+{% block content %}
+    {% for film in films %}
+        <h1>{{ film.title }}</h1>
+        <p>writer: {{film.writer}}</p>
+    {% endfor %}
+{% endblock content %}
